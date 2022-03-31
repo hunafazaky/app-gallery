@@ -1,0 +1,111 @@
+/* body {
+	height: 100%;
+	background-color: #222;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+} */
+
+h1 {
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bolder;
+	-webkit-text-fill-color: purple;
+	-webkit-text-stroke: 0.5px #ccc;
+	text-shadow: 4px 4px 0 #ccc;
+	margin-top: 0;
+}
+
+/* .container {
+	display: flex;
+	width: 90%;
+	background-color: blanchedalmond;
+	margin: auto;
+	justify-content: center;
+} */
+
+.jumbo {
+	background-color: #222;
+	width: 50%;
+	height: 500px;
+	border: 5px solid blanchedalmond;
+	display: flex;
+}
+
+.container .jumbo img {
+	max-width: 95%;
+	max-height: 95%;
+	margin: auto;
+	box-shadow: 0 0 10px 4px black;
+}
+
+.lg-img-box {
+  background-color: navy;
+	height: 500px;
+	display: flex;
+}
+
+.sm-img-box {
+  background-color: maroon;
+	height: 500px;
+	display: flex;
+	overflow: auto;
+	flex-wrap: wrap;
+}
+
+.lg-img {
+	height: 100%;
+  object-fit: contain;
+	padding: 5px;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.sm-img {
+	width: 33.3334%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.sm-img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+@keyframes animation {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.myfade {
+	animation: animation 800ms forwards;
+}
+
+.terpilih {
+	border: 5px solid purple;
+}
+
+@media (max-width: 600px) {
+	.container {
+		display: block;
+	}
+	.jumbo,
+	.thumbnail {
+		width: 100%;
+		margin: auto;
+	}
+	.thumbnail {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		height: auto;
+	}
+}
+
+@media (max-width: 900px) {
+	.thumb {
+		width: 50%;
+	}
+}
